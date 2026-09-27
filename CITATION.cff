@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use F2C, please cite it as below."
+type: software
+title: "F2C: Fluid-to-Continuum Solver"
+version: 0.1.0
+date-released: 2026-09-27
+url: "https://flow2c-simulation.github.io/"
+authors:
+  - name: "Flow2C Simulation (Flow to Coupled Simulation)"
+keywords:
+  - computational fluid dynamics
+  - CFD
+  - heat transfer
+  - simulation
+preferred-citation:
+  type: software
+  title: "F2C: Fluid-to-Continuum Solver"
+  version: 0.1.0
+  year: 2026
+  url: "https://flow2c-simulation.github.io/"
+  authors:
+    - name: "Flow2C Simulation (Flow to Coupled Simulation)"
+  publisher:
+    name: "Flow2C Simulation (Flow to Coupled Simulation)"

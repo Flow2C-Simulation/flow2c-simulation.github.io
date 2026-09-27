@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>F2C — Fluid-to-Continuum Solver</title>
+  <meta name="description" content="F2C by Flow2C Simulation: a flow and heat-transfer simulation tool engineered in-house, from solver to desktop studio.">
+  <meta property="og:title" content="F2C — Fluid-to-Continuum Solver">
+  <meta property="og:description" content="Flow and heat-transfer simulation, engineered in-house by Flow2C Simulation.">
+  <meta name="theme-color" content="#07111f">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="F2C home">
+        <img src="assets/favicon.svg" alt="" width="28" height="28">
+        <span>F2C</span>
+      </a>
+      <nav aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#studio">Studio</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#cite">Cite</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <canvas id="flow" aria-hidden="true"></canvas>
+      <div class="wrap hero-content">
+        <p class="eyebrow">Flow2C Simulation · <em>Flow to Coupled Simulation</em></p>
+        <h1>F2C<span class="h1-sub">Fluid-to-Continuum Solver</span></h1>
+        <p class="lede">Flow and heat-transfer simulation, engineered in-house from the solver core to the desktop studio. Built to be fast, transparent and trustworthy.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#capabilities">Explore F2C</a>
+          <a class="btn btn-ghost" href="#roadmap">See the roadmap</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Simulation you can own end to end.</h2>
+        </div>
+        <div class="prose">
+          <p>F2C is a computational fluid dynamics product developed by Flow2C Simulation. Every part of it (the numerics, the solvers, the visualisation and the desktop application) is designed and written by our own team.</p>
+          <p>That lets us control quality, performance and licensing without compromise, and keep the whole product consistent from the first input to the final result.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities" class="section section-alt">
+      <div class="wrap">
+        <p class="eyebrow">Capabilities</p>
+        <h2>What F2C does today</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 12c3-6 6 6 9 0s6 6 9 0"/><path d="M3 18c3-6 6 6 9 0s6 6 9 0" opacity=".5"/></svg>
+            </div>
+            <h3>Fluid flow</h3>
+            <p>Steady and transient incompressible flow for internal and external problems.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3v12"/><circle cx="12" cy="18" r="3"/><path d="M16 6h3M16 10h3"/></svg>
+            </div>
+            <h3>Heat transfer</h3>
+            <p>Conduction and transport of heat and other scalar quantities through a domain.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 20 20 4"/><path d="M4 4h6v6H4zM14 14h6v6h-6z"/></svg>
+            </div>
+            <h3>Trust in results</h3>
+            <p>Every run checks its own setup, reports mesh quality, and explains itself when something does not converge.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 20h18"/><path d="M6 16V9M11 16V5M16 16v-4M21 16V8"/></svg>
+            </div>
+            <h3>Error estimates</h3>
+            <p>Built-in mesh-independence studies tell you how accurate an answer is, not just what it is.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M3 9h18"/></svg>
+            </div>
+            <h3>Desktop studio</h3>
+            <p>Set up, run and inspect a case in one native application with a built-in results viewer.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3 4 7v5c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>Verified continuously</h3>
+            <p>Every change is checked automatically against reference solutions before it ships.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="studio" class="section">
+      <div class="wrap split split-media">
+        <div>
+          <p class="eyebrow">F2C Studio</p>
+          <h2>From setup to result in one window.</h2>
+          <ul class="checks">
+            <li>Edit the case in a clear tree and settings panel</li>
+            <li>Run with one key and follow progress live</li>
+            <li>See fields, meshes and values the moment a run finishes</li>
+            <li>Results open in standard tools as well</li>
+          </ul>
+        </div>
+        <figure class="mock" aria-label="Illustration of the F2C Studio window">
+          <div class="mock-bar"><span></span><span></span><span></span><b>F2C Studio</b></div>
+          <div class="mock-body">
+            <div class="mock-side">
+              <i style="width:70%"></i><i style="width:55%"></i><i style="width:80%"></i>
+              <i style="width:45%"></i><i style="width:65%"></i><i style="width:50%"></i>
+            </div>
+            <div class="mock-main">
+              <div class="mock-field"></div>
+              <div class="mock-log"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <figcaption>Illustrative view</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section section-alt">
+      <div class="wrap">
+        <p class="eyebrow">Roadmap</p>
+        <h2>Where F2C is going</h2>
+        <ol class="timeline">
+          <li class="done">
+            <span class="tl-tag">Available</span>
+            <h3>Foundations</h3>
+            <p>Heat conduction, scalar transport and incompressible flow in 2D, with the desktop studio and viewer.</p>
+          </li>
+          <li class="done">
+            <span class="tl-tag">Available</span>
+            <h3>Trust in results</h3>
+            <p>Setup checks, convergence diagnosis, error estimation and continuous verification.</p>
+          </li>
+          <li class="next">
+            <span class="tl-tag">Next</span>
+            <h3>3D and general meshes</h3>
+            <p>Complex geometries and imported meshes, with a 3D viewer.</p>
+          </li>
+          <li>
+            <span class="tl-tag">Planned</span>
+            <h3>Geometry and meshing</h3>
+            <p>A geometry builder and mesher inside the studio, with CAD import.</p>
+          </li>
+          <li>
+            <span class="tl-tag">Planned</span>
+            <h3>Heat transfer and turbulence</h3>
+            <p>Coupled thermal flows and turbulence modelling for industrial problems.</p>
+          </li>
+          <li>
+            <span class="tl-tag">Planned</span>
+            <h3>Multiphase and beyond</h3>
+            <p>Two-phase flow, phase change, and a growing set of physical models.</p>
+          </li>
+          <li>
+            <span class="tl-tag">Planned</span>
+            <h3>Performance at scale</h3>
+            <p>Parallel execution for large models.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="cite" class="section">
+      <div class="wrap">
+        <p class="eyebrow">Citation</p>
+        <h2>How to cite F2C</h2>
+        <p class="cite-intro">If you use F2C in work that leads to a publication, report or thesis, please cite it as follows.</p>
+        <div class="cite-box">
+          <div class="cite-tabs" role="tablist" aria-label="Citation format">
+            <button role="tab" aria-selected="true" data-fmt="bibtex">BibTeX</button>
+            <button role="tab" aria-selected="false" data-fmt="apa">APA</button>
+            <button role="tab" aria-selected="false" data-fmt="text">Plain text</button>
+            <button class="cite-copy" type="button">Copy</button>
+          </div>
+<pre class="cite-text" data-fmt="bibtex">@software{f2c_2026,
+  author    = {{Flow2C Simulation (Flow to Coupled Simulation)}},
+  title     = {{F2C}: Fluid-to-Continuum Solver},
+  version   = {0.1.0},
+  year      = {2026},
+  publisher = {Flow2C Simulation},
+  url       = {https://flow2c-simulation.github.io/}
+}</pre>
+<pre class="cite-text" data-fmt="apa" hidden>Flow2C Simulation (Flow to Coupled Simulation). (2026). F2C: Fluid-to-Continuum Solver (Version 0.1.0) [Computer software]. https://flow2c-simulation.github.io/</pre>
+<pre class="cite-text" data-fmt="text" hidden>Flow2C Simulation (Flow to Coupled Simulation), F2C: Fluid-to-Continuum Solver, version 0.1.0, 2026. https://flow2c-simulation.github.io/</pre>
+        </div>
+        <p class="cite-note">Please give the version you actually used.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="wrap contact-inner">
+        <h2>Interested in F2C?</h2>
+        <p>F2C is in active development. Get in touch for early access, collaboration, or to follow our progress.</p>
+        <a class="btn btn-primary" href="https://github.com/Flow2C-Simulation">Follow on GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year">2026</span> Flow2C Simulation (Flow to Coupled Simulation). All rights reserved.</span>
+      <span>F2C is proprietary software.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
